@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Upcoming Projects</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .meme {
+                margin: 75px;
+                display: inline-block;
+                position:relative;
+            }
+            .meme .meme-top{
+                display:none;
+                position:absolute;
+                left:0;
+            }
+            .meme:hover .meme-top {
+                display:inline;
+            }
+        </style>
+        <!--All of this was purely for the change image on hover effect which turned out to be 
+        more work than it was worth-->
+    </head>
+    <body>
+        <div class="meme">
+            <img src="project_img(1).png" alt="cheap_meme">
+            <img src="project_img(2).png" class="meme-top" alt="cheap-meme-top">
+            <!--The two images used to achieve the effect-->
+        </div>
+
+    </body>
+</html>
