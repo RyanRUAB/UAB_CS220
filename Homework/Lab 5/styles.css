@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+@import url('https://fonts.googleapis.com/css?family=Klee%20One');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    width:100%;
+    background-color: #eaeaea;
+    padding: 10px;
+    border-bottom: 2px solid #064656;
+}
+
+.navname {
+    padding-left: 15%;
+    color:#064656;
+    font-family: 'Handlee','Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+/* a {
+    color:rgb(96, 164, 247);
+    text-decoration:none;
+    This is to get rid of the underline and change the color of the link to one that I liked
+}
+a:hover {
+    color:aquamarine;
+    text-decoration:underline;
+    This is to add a different color and the underline when hovering over the link
+}
+nav {
+    padding:7px;
+} */
+
+
+body {
+    background-color:#dcdcdc;
+    color:rgb(12, 12, 12);
+    /*This is to add the gray color that I like for the background*/
+}
+
+h1 {
+    font-family:'Klee One', 'Courier New', Courier, monospace;
+    color:#064656;
+    margin-right:auto;
+    margin-left:auto;
+    padding:35px;
+    text-align: center;
+}
+h2 {
+    font-family:'Klee One', 'Courier New', Courier, monospace;
+    color:#064656;
+    margin-right:auto;
+    margin-left:auto;
+    padding:10px;
+    text-align: center;
+}
+h3 {
+    font-family:'Klee One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#064656;
+    margin-right:auto;
+    margin-left:auto;
+    padding:20px;
+    text-align: center;
+}
+/*From h1 to h3, all of this is just setting the margins and padding as well as 
+the fonts that I wanted for the respective heading*/
+
+p {
+    padding-right:20px;
+    padding-left:20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    color:#000000;
+    /*This is basically just choosing what font I want and giving it some padding*/
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    /*Just aligning it with the rest of the page*/
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1519px;
+}
+
+.aboutme {
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    margin-left: 15%;
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    background-color: #696969;
+    color:#ebebeb;
+}
+
+.uabimage {
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20%;
+}
+
+.midbody {
+    display: flex;
+    background-color: whitesmoke;
+    margin-top: 15px;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbies {
+    width:33%;
+}
