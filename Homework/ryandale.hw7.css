@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: gray;
+    text-align: center;
+    font-size: xx-large;
+    position: sticky;
+    top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 2;
+}
+
+main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(auto-fill, 300px);
+    gap: 30px;
+    background-color: slategray;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+div:hover {
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+div:nth-child(even) {
+    border: 5px solid purple;
+}
+
+div:nth-child(odd) {
+    border: 5px solid midnightblue;
+}
+
+.firstimage {
+    background-image: url(https://images.unsplash.com/photo-1695516780651-b07bdc954db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+}
+
+.firstimage:hover::before {
+    content: "Hexagonal Cliffs";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.secondimage {
+    background-image: url(https://images.unsplash.com/photo-1695456527397-0b9e1c79fe96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+}
+
+.secondimage:hover::before {
+    content: "Fall Trees";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.thirdimage {
+    background-image: url(https://images.unsplash.com/photo-1695133389296-fdd6c49d422c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+}
+
+.thirdimage:hover::before {
+    content: "Wetland Mountain";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.fourthimage {
+    background-image: url(https://images.unsplash.com/photo-1695326891058-048c65138f3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+}
+
+.fourthimage:hover::before {
+    content: "Tropical Waterfall";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.fifthimage {
+    background-image: url(https://images.unsplash.com/photo-1592636120953-3d2b28ebfd69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);
+}
+
+.fifthimage:hover::before {
+    content: "Starry Sky";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.sixthimage {
+    background-image: url(https://images.unsplash.com/photo-1695516516189-47a458340676?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+}
+
+.sixthimage:hover::before {
+    content: "Frozen Tunnel";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.seventhimage {
+    background-image: url(https://images.unsplash.com/photo-1695669089599-9461b72d6643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+}
+
+.seventhimage:hover::before {
+    content: "Floating Glacier";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.eighthimage {
+    background-image: url(https://images.unsplash.com/photo-1695664225177-32c168130e30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80);
+}
+
+.eighthimage:hover::before {
+    content: "Icelandic River";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.ninthimage {
+    background-image: url(https://images.unsplash.com/photo-1686579809662-829e8374d0a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80);
+}
+
+.ninthimage:hover::before {
+    content: "Mountain Range";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.tenthimage {
+    background-image: url(https://images.unsplash.com/photo-1675048989013-f4606fb792ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80);
+}
+
+.tenthimage:hover::before {
+    content: "Winter Tree";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.eleventhimage {
+    background-image: url(https://images.unsplash.com/photo-1671052570986-ffa14789ca03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80);
+}
+
+.eleventhimage:hover::before {
+    content: "Grand Canyon";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+.twelfthimage {
+    background-image: url(https://images.unsplash.com/photo-1694802519363-42c4067833c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+}
+
+.twelfthimage:hover::before {
+    content: "Volcanic Beach";
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1em;
+    width: 300px;
+    height:292px;
+    border-radius: 15px;
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+}
+
+div:hover::after {
+    content: "🔍";
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+}
