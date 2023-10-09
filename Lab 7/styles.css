@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee');
 @import url('https://fonts.googleapis.com/css?family=Klee%20One');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -78,6 +79,7 @@ p {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
     color:#000000;
+    word-wrap: break-word;
     /*This is basically just choosing what font I want and giving it some padding*/
 }
 
@@ -88,24 +90,14 @@ li {
     /*Just aligning it with the rest of the page*/
 }
 
-/* main {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1519px;
-} */
-
 .aboutme {
     display: flex;
-    width: 500px;
     height: 300px;
     flex-direction: column;
     background-color: whitesmoke;
     border-radius: 20px;
-    /* position: relative; */
-/*     top: 20px;
-    margin-left: 15vw;
-    margin-bottom: 15px; */
 }
+/* A lot of times the width wasn't necessary so I got rid of them */
 
 .aboutmecontainer {
     display:flex;
@@ -125,9 +117,6 @@ footer {
 
 .uabimage {
     display: flex;
-    /* float: right; */
-/*     margin-top: 15px;
-    margin-right: 20%; */
     justify-content: center;
     align-items:center;
 }
@@ -160,16 +149,29 @@ footer {
     padding-top:20px;
     padding-bottom:20px;
 }
+/* I just found these widths to be the best for scaling */
+
 
 .gridcontainer {
     display: grid;
     width: auto;
     max-width: 100%;
     height: auto;
-    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
     grid-template-rows: repeat(auto-fill, 300px);
     gap: 2%;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
 }
+/* I had to overhaul the original way I made the website because it would not
+scale as I had wrapped it */
+
+@media (max-width:480px) {
+    .uabimage img {
+        object-fit: contain;
+        width: 200px;
+        height: 200px;
+    }
+}
+/* Having the image be resized felt the most reasonable for a smaller viewport */
