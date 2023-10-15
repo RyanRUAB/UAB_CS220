@@ -165,7 +165,7 @@ footer {
     padding-top: 10px;
 }
 /* I had to overhaul the original way I made the website because it would not
-scale as I had wrapped it */
+scale as I had wrapped it to be 1080p exclusive*/
 
 @media (max-width:480px) {
     .uabimage img {
