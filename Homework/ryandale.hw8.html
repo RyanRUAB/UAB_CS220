@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            let lettergrade;
+            let treat;
+            let grade = prompt("Please enter the student's numeric grade.");
+            grade = parseInt(grade);
+            switch(true) {
+                case grade > 100:
+                    lettergrade = "Please enter a valid grade.";
+                    treat = "N/A";
+                    break;
+                case grade >= 90:
+                    lettergrade = "A";
+                    treat = "Candy";
+                    break;
+                case grade >= 80:
+                    lettergrade = "B";
+                    treat = "Apple";
+                    break;
+                case grade >= 70:
+                    lettergrade = "C";
+                    treat = "Mint";
+                    break;
+                case grade >= 60:
+                    lettergrade = "D";
+                    treat = "Pencil";
+                    break;
+                case grade >= 0:
+                    lettergrade = "F";
+                    treat = "Awkward conversation with parents";
+                    break;
+                default:
+                    lettergrade = "Please enter a valid grade.";
+                    treat = "N/A";                 
+            }
+            console.log("Grade: " + grade)
+            console.log("Letter Grade: " + lettergrade)
+            console.log("Reward: " + treat)
+        </script>
+    </head>
+    <body>
+        <h1>Grade Based Treats</h1>
+        <style>
+            body {
+                background-color: lightgray;
+            }
+        </style>
+    </body>
+</html>
