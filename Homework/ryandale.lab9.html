@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            let result;
+            let cpuinput = Math.floor(Math.random() * 3);
+            let initialinput = prompt("Rock, Paper, or Scissors?");
+            let userinput = initialinput.toLowerCase();
+            switch (true) {
+                case cpuinput == 0:
+                    cpuinput = "rock";
+                    break;
+                case cpuinput == 1:
+                    cpuinput = "paper";
+                    break;
+                case cpuinput == 2:
+                    cpuinput = "scissors";
+                    break;
+            }
+            while (userinput != "rock" && userinput != "paper" && userinput != "scissors") {
+                initialinput = prompt("Please input a valid response.", "Rock, Paper, or Scissors");
+                userinput = initialinput.toLowerCase();
+            }
+            switch (true) {
+                case userinput == "rock" && cpuinput == "scissors":
+                    result = "You win!";
+                    break;
+                case userinput == "rock" && cpuinput == "paper":
+                    result = "You lose.";
+                    break;
+                case userinput == "rock" && cpuinput == "rock":
+                    result = "It's a tie!";
+                    break;
+                case userinput == "paper" && cpuinput == "rock":
+                    result = "You win!";
+                    break;
+                case userinput == "paper" && cpuinput == "scissors":
+                    result = "You lose.";
+                    break;
+                case userinput == "paper" && cpuinput == "paper":
+                    result = "It's a tie!";
+                    break;
+                case userinput == "scissors" && cpuinput == "paper":
+                    result = "You win!";
+                    break;
+                case userinput == "scissors" && cpuinput == "rock":
+                    result = "You lose.";
+                    break;
+                case userinput == "scissors" && cpuinput == "scissors":
+                    result = "It's a tie!";
+                    break;
+                default:
+                    result = "Please input a valid option.";
+                    location.reload();
+            }
+            console.log("You chose: " + userinput);
+            console.log("Computer chose: " + cpuinput);
+            console.log(result);
+            let again = confirm("Would you like to play again?")
+            switch (true) {
+                case again == true:
+                    location.reload();
+                    break;
+                case again == false:
+                    break;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Rock, Paper, Scissors</h1>
+        <style>
+            body {
+                background-color: lightgray;
+            }
+        </style>
+    </body>
+</html>
