@@ -122,10 +122,6 @@ function resetIncorrectLetters() {
     const incorrectLettersElement = document.getElementById('incorrect-letters');
     incorrectLettersElement.textContent = ``;
     incorrectLetters = [];
-    timerInterval = setInterval(() => {
-        timer - 1;
-        updateTimer();
-    }, 1000);
 }
 
 // Function to update the hangman figure based on incorrect guesses
