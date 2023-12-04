@@ -106,8 +106,9 @@ function updateWordDisplay() {
     // Set the content of the HTML element to the updated word
     wordDisplayElement.innerHTML = displayedWord.replace(/ /g, '&nbsp;'); // Replace spaces with non-breaking spaces
 
-    // Check if the game has been won
-    if (displayedWord === currentWord) {
+    // Check if the game has been won by removing the spaces from the displayed word
+    if (displayedWord.replace(/\s+/g, '') == currentWord) {
+        endGame();
         displayMessage(`Congratulations! You guessed the word: ${currentWord}`);
     }
 }
@@ -229,7 +230,7 @@ function handleLetterClick(letter) {
                 // The hangman figure is complete
                 displayMessage('Game over - Hangman figure complete!');
                 endGame();
-            } else if (displayedWord === currentWord.toLowerCase()) {
+            } else if (displayedWord.toLowerCase() === currentWord.toLowerCase()) {
                 // All letters have been guessed
                 displayMessage(`Congratulations! You guessed the word: ${currentWord}`);
                 endGame();
