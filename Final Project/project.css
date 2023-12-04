@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #073200;
+  
+  }
+  
+  #hangman-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #deac00;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #hangman-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+  }
+  
+  .hangman-part {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-color: #333;
+  }
+  
+  .hangman-head {
+    border-radius: 100%;
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #000000; /* Head color */
+  }
+  
+  .hangman-body {
+    width: 10px;
+    height: 50px;
+    margin-top: -5px;
+    background-color: #000000; /* Body color */
+  }
+  
+  .hangman-left-arm {
+    width: 5px;
+    height: 40px;
+    margin-left: -45px;
+    margin-top: -50px;
+    transform: rotate(-80deg);
+    background-color: #000000; /* Limb color */  
+  }
+  
+  .hangman-right-arm {
+    width: 5px;
+    height: 40px;
+    margin-left: 54px;
+    margin-top: -45px;
+    transform: rotate(80deg);
+    background-color: #000000; /* Limb color */
+  }
+  
+  .hangman-left-leg {
+    width: 5px;
+    height: 40px;
+    margin-top: -10px;
+    margin-left: -30px;
+    transform: rotate(45deg);
+    background-color: #000000; /* Limb color */
+  }
+  
+  .hangman-right-leg {
+    width: 5px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: -45px;
+    transform: rotate(-45deg);
+    background-color: #000000; /* Limb color */
+  }
+  
+  
+  
+  #word-display {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #073200; /* Word display color */
+  }
+  
+  #incorrect-letters {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #FF0000; /* Red color for incorrect letters */
+  }
+  
+  #letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  #game-info {
+    margin-top: 20px;
+  }
+  
+  #hint-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0C5201; /* Hint button color */
+    color: #fff; /* Text color for the hint button */
+  }
+
+  #reset-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #872405; /* Hint button color */
+    color: #fff; /* Text color for the hint button */
+  }
+  
+  #message-area {
+    display: none;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #573d08;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  #message-area.show {
+    display: block;
+  }
