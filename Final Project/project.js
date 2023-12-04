@@ -43,8 +43,8 @@ function startGame() {
     generateLetterButtons();
     resetIncorrectLetters();
     displayMessage("reset");
-
- 
+    clearInterval(timerInterval);
+    setTimer();
 }
 
 function setTimer() {
@@ -256,7 +256,6 @@ function disableLetterButtons() {
 document.getElementById('hint-button').addEventListener('click', () => getHint());
 // Function to handle "Reset" button click
 document.getElementById('reset-button').addEventListener('click', () => startGame());
-
 function getHint() {
     const category = wordCategories.find(cat => wordsAndHints.hasOwnProperty(cat) && wordsAndHints[cat].words.includes(currentWord));
 
@@ -269,4 +268,3 @@ function getHint() {
 
 // Initialize the game
 startGame();
-setTimer();
